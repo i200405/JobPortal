@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" ng-app="jobBoardApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Job Board Platform</title>
+    <!-- AngularJS and AngularJS Route -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- AngularJS Application Scripts -->
+    <script src="app.js"></script>
+    <script src="home/home.controller.js"></script>
+    <script src="login/login.controller.js"></script>
+    <script src="signup/signup.controller.js"></script>
+    <script src="dashboard/dashboard.controller.js"></script>
+    <script src="upload/upload-job.controller.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a ng-href="#!/" class="nav-item">Home</a>
+        <div class="nav-right">
+            <a ng-href="#!/login" class="nav-item" ng-show="!isAuthenticated">Login/Signup</a>
+            <a href="#!/dashboard" class="nav-item" ng-show="isAuthenticated">Dashboard</a>
+
+            
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="images/hero.jpg" alt="Hero Image" class="hero-image">
+    </div>
+
+    <!-- Features Section -->
+    <div class="features">
+        <div class="feature-item">
+            <div class="icon-bg">
+                <img src="images/search.gif" alt="Feature 1" class="feature-icon">
+            </div>
+            <p class="feature-tagline">Find Your Dream Job</p>
+        </div>
+        <div class="feature-item">
+            <div class="icon-bg">
+                <img src="images/building.gif" alt="Feature 2" class="feature-icon">
+            </div>
+            <p class="feature-tagline">Explore Top Companies</p>
+        </div>
+        <div class="feature-item">
+            <div class="icon-bg">
+                <img src="images/handshake.gif" alt="Feature 3" class="feature-icon">
+            </div>
+            <p class="feature-tagline">Join Our Community</p>
+        </div>
+    </div>
+
+    <!-- Job Listings Section -->
+    <div ng-view></div> <!-- This is where your views will be injected -->
+</body>
+
+</html>

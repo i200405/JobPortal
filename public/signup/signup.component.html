@@ -1,0 +1,31 @@
+<div class="signup-container" ng-controller="SignupController">
+  <h2>Sign Up</h2>
+  <form ng-submit="signup()">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" ng-model="user.name" placeholder="Enter your username" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" ng-model="user.email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" ng-model="user.password" placeholder="Enter your password" required>
+    </div>
+    <div class="form-group">
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" ng-model="user.confirmPassword" placeholder="Confirm your password" required>
+    </div>
+    <div class="form-group">
+      <label for="role">Role</label>
+      <select id="role" ng-model="user.role" required>
+        <option value="employer">Employer</option>
+        <option value="job_seeker">Job Seeker</option>
+      </select>
+    </div>
+    <button type="submit" class="btn">Sign Up</button>
+    <p ng-show="errorMessage">{{ errorMessage }}</p>
+  </form>
+  <p>Already have an account? <a ng-href="#!/login">Login here</a></p>
+</div>

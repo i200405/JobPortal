@@ -1,0 +1,323 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color for contrast */
+  margin: 0;
+  padding: 20px; /* Add padding to the body for overall spacing */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(40, 167, 69, 0.3); /* Low opacity green background */
+  padding: 15px 20px; /* Add padding to the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  border: 2px solid #28a745; /* 100% solid green border */
+  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  position: fixed;
+  top: 20px; /* Adjust the position from the top */
+  left: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensure navbar is on top */
+}
+
+.navbar .nav-item {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar .nav-item:hover {
+  text-decoration: underline;
+  color: #c2f7cd; /* Slightly lighter green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.nav-right .nav-item {
+  margin-left: 15px;
+}
+
+/* Hero Image Styles */
+.hero {
+  text-align: center;
+  margin-top: 80px; /* Space below navbar */
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  min-width: 100%;
+  height: 90vh; /* Slightly less than full viewport height */
+  border-radius: 10px;
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+/* Feature Icons Styles */
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  text-align: center;
+  width: 30%;
+}
+
+.icon-bg {
+  background-color: rgba(40, 167, 69, 0.3); /* Low opacity green background */
+  border-radius: 50%;
+  padding: 20px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.feature-icon {
+  max-width: 50px;
+  height: auto;
+}
+
+.icon-bg:hover {
+  transform: scale(1.1);
+}
+
+.feature-tagline {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+/* Job Listings Styles */
+.job-list {
+  margin-top: 150px; /* Add space to account for the fixed navbar */
+  width: 70%; /* Take up 70% of the width */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.job-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.job-list li {
+  background-color: #333; /* Greyish background color */
+  border-radius: 5px;
+  padding: 20px; /* Add padding to the job cards */
+  border: 1px solid #444;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Space between job cards */
+}
+
+.job-list h3 {
+  margin-top: 0;
+}
+
+.job-list a {
+  color: #28a745; /* Link color that complements the navbar */
+  text-decoration: none;
+}
+
+.job-list a:hover {
+  text-decoration: underline;
+}
+
+.job-list p {
+  color: #ccc; /* Lighter grey for the text */
+}
+
+
+
+
+/* Login Styles */
+
+.login-container {
+  width: 50%; /* Set the width to 50% of the screen */
+  margin: 100px auto; /* Center the container and add some margin at the top */
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* Ensure padding is included within the width */
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #555;
+  color: #fff;
+  box-sizing: border-box; /* Ensure padding does not cause overflow */
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.login-container a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+
+/* Signup Styles */
+
+.signup-container {
+  width: 50%; /* Set the width to 50% of the screen */
+  margin: 100px auto; /* Center the container and add some margin at the top */
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* Ensure padding is included within the width */
+}
+
+.signup-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #555;
+  color: #fff;
+  box-sizing: border-box; /* Ensure padding does not cause overflow */
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.signup-container a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.signup-container a:hover {
+  text-decoration: underline;
+}
+
+
+/* Upload Job */
+
+.upload-job-container {
+  width: 50%;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #555;
+  color: #fff;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+

@@ -1,0 +1,16 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form ng-submit="login()">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" ng-model="user.email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" ng-model="user.password" required>
+    </div>
+    <button type="submit" class="btn">Login</button>
+  </form>
+  <p ng-show="errorMessage">{{ errorMessage }}</p>
+  <p>Don't have an account? <a ng-href="#!/signup">Sign up</a></p>
+</div>

@@ -1,0 +1,19 @@
+<div class="dashboard-container">
+  <h2>Welcome, {{ user.name }}</h2>
+  <p>Your role: {{ user.role }}</p>
+
+  <!-- Section for Employers -->
+  <div ng-show="user.role === 'employer'">
+    <h3>Employer Dashboard</h3>
+    <p>You can manage your job postings here:</p>
+    <a ng-href="#!/upload-job">Upload Job</a>
+  </div>
+
+  <!-- Section for Job Seekers -->
+  <div ng-show="user.role === 'job_seeker'">
+    <h3>Job Seeker Dashboard</h3>
+    <p>Explore available jobs or update your profile:</p>
+    <button ng-click="viewJobs()">View Available Jobs</button>
+    <button ng-click="updateProfile()">Update Profile</button>
+  </div>
+</div>

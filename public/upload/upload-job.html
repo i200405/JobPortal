@@ -1,0 +1,27 @@
+<div class="upload-job-container">
+  <h2>Upload a Job</h2>
+  <form ng-submit="uploadJob()">
+    <div class="form-group">
+      <label for="title">Job Title</label>
+      <input type="text" id="title" ng-model="job.title" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Job Description</label>
+      <textarea id="description" ng-model="job.description" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="company">Company Name</label>
+      <input type="text" id="company" ng-model="job.company" required>
+    </div>
+    <div class="form-group">
+      <label for="location">Location</label>
+      <input type="text" id="location" ng-model="job.location" required>
+    </div>
+    <div class="form-group">
+      <label for="salary">Salary</label>
+      <input type="number" id="salary" ng-model="job.salary" required>
+    </div>
+    <button type="submit" class="btn">Upload Job</button>
+    <p ng-if="errorMessage">{{ errorMessage }}</p>
+  </form>
+</div>
