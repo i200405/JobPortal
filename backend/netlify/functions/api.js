@@ -20,8 +20,8 @@ mongoose.connect(process.env.MONGODB_URI, {
   .catch(err => console.log('MongoDB connection error:', err));
 
 // Define Routes
-router.use('/auth', require('../routes/auth'));
-router.use('/jobs', require('../routes/jobs'));
+router.use('/auth', require('../../routes/auth'));
+router.use('/jobs', require('../../routes/jobs'));
 
 app.use('/.netlify/functions/api', router);
 
